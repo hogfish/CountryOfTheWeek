@@ -1,7 +1,8 @@
 <h1>Country Of The Week</h1>
 <p>Not much to see here yet, folks.</p>
+<h2> This week's country is: <%= @country_this_week.name %> </h2>
   <p>
 <% @countries.each do |country| %>
-<%= country.name %>      <br/>
+<%= country.name %> &nbsp; <%= country.date_started %>      <br/>
         <% end %>
 </p>
